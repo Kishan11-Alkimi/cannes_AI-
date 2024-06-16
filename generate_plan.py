@@ -5,7 +5,7 @@ import streamlit as st
  
 AWS_ACCESS_KEY_ID = st.secrets["AWS_ACCESS_KEY_ID"]
 AWS_SECRET_ACCESS_KEY = st.secrets["AWS_SECRET_ACCESS_KEY"]
-AWS_REGION = st.secrets["AWS_CREATIVES_REGION"]
+AWS_REGION = st.secrets["AWS_PLAN_REGION"]
 
 def call_bedrock_llama3(prompt, max_tokens=2048, temperature=0.4, top_p=0.9):
     client = boto3.client(
