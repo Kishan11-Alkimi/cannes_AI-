@@ -14,7 +14,7 @@ AWS_SECRET_ACCESS_KEY = st.secrets["AWS_SECRET_ACCESS_KEY"]
 AWS_REGION = st.secrets["AWS_CREATIVES_REGION"]
 IMAGE_API = st.secrets["IMAGE_API"]
 
-url = "https://api.getimg.ai/v1/essential-v2/text-to-image"
+url = "https://api.getimg.ai/v1/essential-v1/text-to-image"
 
 def upload_to_s3(encoded_data, image_dir, image_name, Delete=False, Create=False):
 
